@@ -1,0 +1,181 @@
+#envelope {
+    position: relative;
+    width: 280px;
+    height: 180px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    top: 150px;
+    background-color: #e83982;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+#counter {
+    text-align: center;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 48px;
+    text-align: center;
+    color: #eb70a3;
+}
+#counter-title {
+    font-weight: 800;
+    font-style: normal;
+    font-size: 48px;
+    text-align: center;
+    color: #d2206a;
+}
+.front {
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: 3;
+    cursor: pointer;
+}
+.flap {
+    border-left: 140px solid transparent;
+    border-right: 140px solid transparent;
+    border-bottom: 82px solid transparent;
+    border-top: 98px solid #e83982;
+    transform-origin: top;
+    cursor: pointer;
+}
+.pocket {
+    border-left: 140px solid #ec87b1;
+    border-right: 140px solid #ec87b1;
+    border-bottom: 90px solid #eb70a3;
+    border-top: 90px solid transparent;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.letter {
+    position: relative;
+    background-color: #fff;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90%;
+    border-radius: 6px;
+    box-shadow: 0 2px 26px rgba(0, 0, 0, .12);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.letter:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.question {
+    margin-top: 20px;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Caveat, cursive;
+    font-size: 24px;
+}
+.btn-group {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.btn-group button {
+    font-weight: 800;
+    font-style: normal;
+    background-color: transparent;
+    border: solid 2px #e5508e;
+    color: #e5508e;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 5px;
+    padding: 10px;
+    line-height: 0;
+    text-decoration:  none;
+    min-width: 80px;
+    outline: none;
+    cursor: pointer;
+    height: inherit;
+    position: absolute;
+}
+#yes {
+    background-color: #e5508e;
+    border-color: #e5508e;
+    color: white;
+}
+#no {
+    background-color: white;
+}
+.btn-group button:hover {
+    background-color: red;
+    color: #e5508e;
+}
+.btn-group button:nth-child(1) {
+    margin-left: -130px;
+}
+.btn-group button:nth-child(2) {
+    margin-right: -130px;
+}
+.open .flap {
+    transform: rotatex(180deg);
+    transition: transform 0.4s ease, z-index 0.6s;
+    z-index: 1;
+}
+.close .flap {
+    transform: rotatex(0deg);
+    transition: transform 0.4s 0.6s ease, z-index 1s;
+    z-index: 5;
+}
+.close .letter {
+    transform: translatey(0px);
+    transition: transform 0.4s ease, z-index 1s;
+    z-index: 2;
+}
+.open .letter {
+    transform: translatey(-150px);
+    transition: transform 0.4s 0.6s ease, z-index 0.6s;
+    z-index: 1;
+}
+body {
+    background-color:  #F8C8DC;
+    
+}
+.wrapper {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reset {
+    text-align: center;
+}
+.reset button {
+    font-weight: 800;
+    font-style: normal;
+    transition: all 0.1s linear;
+    background-color: transparent;
+    border: solid 2px #e5508e;
+    border-radius: 4px;
+    color: #e5508e;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 5px;
+    padding: 10px;
+    line-height: 1em;
+    text-decoration:  none;
+    min-width: 120px;
+    outline: none;
+    cursor: pointer;
+}
+.reset button:hover {
+    background-color: #e5508e;
+    color: white;
+}
