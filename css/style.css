@@ -153,29 +153,4 @@ body {
     align-items: center;
     justify-content: center;
 }
-.reset {
-    text-align: center;
-}
-.reset button {
-    font-weight: 800;
-    font-style: normal;
-    transition: all 0.1s linear;
-    background-color: transparent;
-    border: solid 2px #e5508e;
-    border-radius: 4px;
-    color: #e5508e;
-    display: inline-block;
-    font-size: 14px;
-    text-transform: uppercase;
-    margin: 5px;
-    padding: 10px;
-    line-height: 1em;
-    text-decoration:  none;
-    min-width: 120px;
-    outline: none;
-    cursor: pointer;
-}
-.reset button:hover {
-    background-color: #e5508e;
-    color: white;
-}
+
