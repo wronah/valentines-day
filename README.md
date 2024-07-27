@@ -8,6 +8,7 @@ This project is a simple web application built using HTML, CSS, and JavaScript t
 - [x] Running NO button (when trying to click no, the button runs from the cursor),  
 - [x] Popup with gif and a message after clicking yes
 - [ ] Popup with random gif and message after clicking yes
+- [ ] When you finally manage to hit the button something happens (desktop only)
 
   
 <sub>Share the digital letter with your loved one on Valentine's Day!</sub>  
