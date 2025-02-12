@@ -150,6 +150,7 @@ body {
 .wrapper {
     height: 80vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -160,7 +161,7 @@ body {
     background-color: #fff;
     border-radius: 6px;
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 15px;
@@ -190,4 +191,28 @@ body {
     border-top-right-radius: 6px;
     border-bottom-left-radius: 6px;
     cursor: pointer;
+}
+
+#countdown-timer {
+    text-align: center;
+    margin-top: 150px;
+    font-family: 'Caveat', cursive;
+    color: #e5508e;
+}
+
+#countdown-timer h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #d2206a;
+}
+
+#timer {
+    font-size: 32px;
+    font-weight: bold;
+    color: #eb70a3;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
 }

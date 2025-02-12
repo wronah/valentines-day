@@ -120,3 +120,23 @@ function getRandomElementWeighted(arr) {
         random -= item.weight;
     }
 }
+
+function updateCountdown() {
+    const now = new Date();
+    const currentYear = now.getFullYear();
+    const nextValentinesDay = new Date(currentYear, 1, 14);
+
+    if (now > nextValentinesDay) {
+        nextValentinesDay.setFullYear(currentYear + 1);
+    }
+
+    const timeDifference = nextValentinesDay - now;
+    const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+    document.getElementById('timer').innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+}
+
+setInterval(updateCountdown, 1000);
