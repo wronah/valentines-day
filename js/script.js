@@ -139,4 +139,5 @@ function updateCountdown() {
     document.getElementById('timer').innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
 }
 
+updateCountdown();
 setInterval(updateCountdown, 1000);
