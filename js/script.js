@@ -48,6 +48,7 @@ btnYes.addEventListener('click', () => {
 closePopup.addEventListener('click', () => {
     !isVisible ? popup.classList.remove('hidden') : popup.classList.add('hidden')
     isVisible = !isVisible
+    document.querySelector('.popup img').src = "";
 })
 btnNo.addEventListener('mouseover', () => {
     const i = Math.floor(Math.random() * (letterRect.width - btnNoRect.width)) + 1
