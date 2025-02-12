@@ -178,10 +178,6 @@ body {
     font-size: 18px;
     text-align: center;
 }
-.popup span {
-    color: red;
-    text-decoration: underline;
-}
 .hidden {
     visibility: hidden;
 }
